@@ -3,6 +3,33 @@
 
 using namespace std;
 
+void initialize_variables();
+void initialize_pointer();
+void initialize_link();
+void initialize_massive();
+void ifelse_construction();
+void ifelseif_construction();
+void readwrite_terminal();
+void cycle_for();
+void cycle_while();
+int send_and_get_data_from_function(int parameter);
+
+int main() {
+    initialize_variables();
+    initialize_pointer();
+    initialize_link();
+    initialize_massive();
+    ifelse_construction();
+    ifelseif_construction();
+    readwrite_terminal();
+    cycle_for();
+    cycle_while();
+    int ne_parameter_name = 10;
+    int rezult_name = send_and_get_data_from_function(ne_parameter_name);
+    return 0;
+}
+
+
 void initialize_variables(){
     cout << "Initialize Variables" << endl;
     int a; // Объявление переменной
@@ -97,8 +124,6 @@ void cycle_while(){
     }while(p > 0);
 }
 
-int main() {
-    cycle_while();
-    return 0;
+int send_and_get_data_from_function(int parameter){
+    return parameter - 10;
 }
-
